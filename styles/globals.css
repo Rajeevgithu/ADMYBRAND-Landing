@@ -1,0 +1,87 @@
+@import "tailwindcss";
+
+/* CSS Custom Properties for exact color control */
+:root {
+  --color-primary: #6366F1;    /* Indigo 500 */
+  --color-accent-1: #EC4899;   /* Pink 400 */
+  --color-accent-2: #38BDF8;   /* Sky 400 */
+  --color-neutral-100: #FFFFFF; /* White */
+  --color-neutral-800: #1F2937; /* Zinc 800 */
+  --color-neutral-900: #0F172A; /* Zinc 900 */
+}
+
+/* Smooth scrolling and scroll margin for fixed navbar */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Add scroll margin to sections to account for fixed navbar */
+section[id] {
+  scroll-margin-top: 5rem;
+}
+
+/* Modern glass effects for sections */
+.light-accent {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+.light-glow {
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+.text-light-accent {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* Custom scrollbar for modern look */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-neutral-900);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, var(--color-primary), var(--color-accent-1));
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, var(--color-accent-1), var(--color-accent-2));
+}
+
+/* Selection styling */
+::selection {
+  background: rgba(99, 102, 241, 0.3);
+  color: white;
+}
+
+::-moz-selection {
+  background: rgba(99, 102, 241, 0.3);
+  color: white;
+}
+
+/* Force background color */
+body {
+  background-color: var(--color-neutral-900) !important;
+}
+
+/* Custom gradient classes */
+.bg-gradient-primary {
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-accent-1) 100%);
+}
+
+.bg-gradient-secondary {
+  background: linear-gradient(135deg, var(--color-accent-2) 0%, var(--color-primary) 100%);
+}
+
+.bg-gradient-accent {
+  background: linear-gradient(135deg, var(--color-accent-1) 0%, var(--color-accent-2) 100%);
+}
+
+.bg-gradient-dark {
+  background: linear-gradient(135deg, var(--color-neutral-900) 0%, var(--color-neutral-800) 100%);
+}
