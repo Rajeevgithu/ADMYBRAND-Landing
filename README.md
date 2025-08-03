@@ -9,7 +9,7 @@ A stunning, professional landing page for ADmyBRAND AI Suite - an AI-powered mar
 
 ## 🚀 Live Demo
 
-[View Live Demo](https://admybrand-landing.vercel.app) *(Deploy to Vercel for instant preview)*
+[View Live Demo]([https://admybrand-landing.vercel.app](https://admybrand-landing-six.vercel.app/)) *(Deploy to Vercel for instant preview)*
 
 ## ✨ Features
 
